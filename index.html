@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="wrapper">
+            <header class="header">
+                    <div class="header__wrapper">
+                        <div class="container">
+                            <div class="header__title">Tests login and registration form</div>
+                            <button class="header__theme__change"></button>
+                        </div>
+                    </div>
+            </header>
+            <div class="content">
+                <div class="content__border">
+                    <div class="content__buttons">
+                        <button class="buttons__login button__active">Login</button>
+                        <button class="buttons__reg">Registration</button>
+                    </div>
+                    <div class="login">
+                        <div class="login__wrapper">
+                            <div class="login__tittle">Login</div>
+                            <p class="capslockOn">Caps Lock is on!</p>
+                            <form action="" method="post" class="login__form">
+                                <div class="input__block__login">
+                                    <div class="username__block">
+                                        <input type="text" placeholder=" " tabindex="1" class="login__username" id="login__username">
+                                        <label for="" class="username__label">Type your username</label>
+                                        <p class="input__error"></p>
+                                    </div>
+                                    <div class="userpassword__block">
+                                        <input type="password" placeholder=" " tabindex="2" class="login__userpassword">
+                                        <label for="" class="userpassword__label">Type your password</label>
+                                        <button type="button" class="visible__password"></button>
+                                    </div>
+                                </div>
+                                <button tabindex="3" type="button" class="button__login__submit">Login</button> 
+                            </form>
+                        </div>
+                        <div class="login__succesfull">
+                            <div class="login__succesfull__page">
+                                <div class="login__succesfull__loading">Loading<span class="Loading__1"></span><span class="Loading__2"></span><span class="Loading__3"></span></div>
+                                <div class="login__succesfull__done">
+                                    <img class="succesfull__done__image" src="img/check__icon.png" alt="">
+                                    <div class="succesfull__done__title">Login Succesfull</div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="script/login.js"></script>
+                    </div>
+                    <div class="registration hidden">
+                        <div class="registration__wrapper">
+                            <div class="registration__tittle">Registration</div>
+                            <p class="capslockOnReg">Caps Lock is on!</p>
+                            <form action="" method="post" class="registration__form">
+                                <div class="input__block">
+                                    <div class="first__block">
+                                        <div class="reg__name__block">
+                                            <input type="text" placeholder=" " tabindex="1" class="registration__name">
+                                            <label for="" class="reg__name__label">Type your name</label>
+                                            <p class="error__name">Contains incorrect characters</p>
+                                        </div>
+                                        <div class="reg__surname__block">
+                                            <input type="text" placeholder=" " tabindex="2" class="registration__surname">
+                                            <label for="" class="reg__surname__label">Type your surname</label>
+                                            <p class="error__surname">Contains incorrect characters</p>
+                                        </div>
+                                        <div class="reg__phone__block">
+                                            <input type="number" placeholder=" " tabindex="3" class="registration__phone">
+                                            <label for="" class="reg__phone__label">Type your phone</label>
+                                            <p class="error__number">It's not a number</p>
+                                        </div>
+                                        <div class="reg__email__block">
+                                            <input type="email" placeholder=" " tabindex="4" class="registration__email">
+                                            <label for="" class="reg__email__label">Type your email</label>
+                                            <p class="error__email">It's not email</p>
+                                        </div>
+                                    </div>
+                                    <div class="second__block">
+                                        <div class="reg__username__block">
+                                            <input type="text" placeholder=" " tabindex="5" class="registration__username">
+                                            <lebel class="reg__username__label">Create your username</lebel>
+                                            <p class="error__username">The fields contains spaces</p>
+                                        </div>
+                                        <div class="reg__password__block">
+                                            <input type="password" placeholder=" " tabindex="6" class="registration__password">
+                                            <lebel class="reg__password__label">Create your password</lebel>
+                                            <button type="button" class="visible__password__reg"></button>
+                                        </div>
+                                        <div class="reg__chekpassword__block">
+                                            <input type="password" placeholder=" " tabindex="7" class="registration__chekpassword">
+                                            <lebel class="reg__chekpassword__label">Chek your password</lebel>
+                                            <p class="error__checkpassword">Is'n match</p>
+                                        </div>
+                                        <button type="button" tabindex="8" class="button__create__pass">Create random password</button>
+                                    </div>
+                                </div>
+                                <button type="button" tabindex="9" class="button__registration__submit">Registration</button>
+                            </form>
+                        </div>
+                        <div class="reg__succesfull">
+                            <div class="reg__succesfull__page">
+                                <div class="reg__succesfull__loading">Loading<span class="Loading__1__reg"></span><span class="Loading__2__reg"></span><span class="Loading__3__reg"></span></div>
+                                <div class="reg__succesfull__done">
+                                    <img class="reg__succesfull__done__image" src="img/check__icon.png" alt="">
+                                    <div class="reg__succesfull__done__title">Registration Succesfull</div>
+                                </div>
+                            </div>
+                        </div>
+                        <script src="script/reg.js"></script>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__wrapper">
+                        <div class="footer__contacts"></div>
+                        <div class="footer__clock">
+                            <span class="clock__hours"></span><span>:</span><span class="clock__minutes"></span><span>:</span><span class="clock__seconds"></span>  
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>    
+    </div>
+    <script src="script/main.js"></script>
+</body>
+</html>
