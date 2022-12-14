@@ -8,13 +8,11 @@ const changeThemeButton = document.querySelector('.header__theme__change');
 const contentBlock = document.querySelector('.wrapper');
 const inputs = document.getElementsByTagName('input');
 const arrOfInputs = [...inputs];
+const bodyBlock = document.querySelector('.body');
 
 const clockHours = document.querySelector('.clock__hours');
 const clockMinutes = document.querySelector('.clock__minutes');
 const clockSeconds = document.querySelector('.clock__seconds');
-
-// const loginSuccesfullPage = document.querySelector('.login__succesfull__page');
-// const regSuccesfullPage = document.querySelector('.reg__succesfull__page');
 
 logButton.addEventListener('click', () => {
     logButton.classList.add('button__active');
@@ -37,6 +35,7 @@ function changeTheme() {
     regButton.classList.toggle('buttons__dark');
     loginSuccesfullPage.classList.toggle('dark');
     regSuccesfullPage.classList.toggle('dark');
+    bodyBlock.classList.toggle('dark');
     arrOfInputs.forEach(e => {
         e.classList.toggle('inputs__dark');
     });  
